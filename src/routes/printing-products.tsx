@@ -6,9 +6,9 @@ import { Reveal } from "@/components/jp/Reveal";
 import { ServiceCard, SectionHeading } from "@/components/jp/ui-blocks";
 import { printServices } from "@/components/jp/data";
 
-const title = "Printing Products & Services | Jayamina Print";
+const title = "Printing Products & Services | Januk Print";
 const description =
-  "Premium printing products — digital, offset, large-format, apparel, stickers, packaging and more. Quality materials, accurate colour and reliable delivery by Jayamina Print.";
+  "Premium printing products — digital, offset, large-format, apparel, stickers, packaging and more. Quality materials, accurate colour and reliable delivery by Januk Print.";
 
 export const Route = createFileRoute("/printing-products")({
   head: () => ({

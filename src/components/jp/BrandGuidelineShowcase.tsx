@@ -1,5 +1,5 @@
 import { Sparkles, Check, FileCheck, Layers, Eye } from "lucide-react";
-import { JayaminaLogo } from "./GoldLogo";
+import { JanukLogo } from "./GoldLogo";
 
 const materialsList = [
   { title: "Business Cards", detail: "350–400gsm Matte Black Stock, Metallic Gold Foil Emblem, Spot UV" },
@@ -22,7 +22,7 @@ export function BrandGuidelineShowcase() {
             Luxury Brand Guidelines &amp; <span className="text-gradient-brand">Print Spec</span>
           </h2>
           <p className="text-base text-muted-foreground">
-            Strict adherence to color calibration, geometry, and gold foil stamping for the Jayamina Print luxury brand identity.
+            Strict adherence to color calibration, geometry, and gold foil stamping for the Januk Print luxury brand identity.
           </p>
         </div>
 
@@ -39,14 +39,14 @@ export function BrandGuidelineShowcase() {
 
             <div className="grid gap-4 sm:grid-cols-2">
               <div className="p-6 rounded-2xl bg-white border border-neutral-200 flex flex-col items-center justify-center min-h-[160px] text-center shadow-sm">
-                <JayaminaLogo variant="gold-on-white" />
+                <JanukLogo variant="gold-on-white" />
                 <span className="mt-3 font-mono text-[0.68rem] text-neutral-500 uppercase tracking-wider">
                   Gold on White (#FFFFFF)
                 </span>
               </div>
 
               <div className="p-6 rounded-2xl bg-black border border-neutral-800 flex flex-col items-center justify-center min-h-[160px] text-center shadow-sm">
-                <JayaminaLogo variant="gold-on-black" />
+                <JanukLogo variant="gold-on-black" />
                 <span className="mt-3 font-mono text-[0.68rem] text-neutral-400 uppercase tracking-wider">
                   Gold on Black (#000000)
                 </span>

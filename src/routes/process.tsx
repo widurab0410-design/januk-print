@@ -7,9 +7,9 @@ import { SectionHeading } from "@/components/jp/ui-blocks";
 import { CTASection } from "@/components/jp/CTASection";
 import { process as steps } from "@/components/jp/data";
 
-const title = "Our Process — Jayamina Print";
+const title = "Our Process — Januk Print";
 const description =
-  "Seven clear steps from first conversation to delivered product. See how Jayamina Print handles your design and printing project from brief to delivery.";
+  "Seven clear steps from first conversation to delivered product. See how Januk Print handles your design and printing project from brief to delivery.";
 
 export const Route = createFileRoute("/process")({
   head: () => ({

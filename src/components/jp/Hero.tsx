@@ -40,7 +40,7 @@ export function Hero() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-              Jayamina Print is a full-service creative design and commercial printing partner.
+              Januk Print is a full-service creative design and commercial printing partner.
               From logo design and brand identities to high-precision business cards, packaging,
               signage, and custom apparel — delivered locally &amp; worldwide.
             </p>

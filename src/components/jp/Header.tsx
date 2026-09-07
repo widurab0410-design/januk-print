@@ -6,8 +6,8 @@ import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/s
 import { COMPANY, navLinks } from "./data";
 import { useScrolled } from "./useScrolled";
 import { ThemeToggle } from "./ThemeToggle";
-import logo from "@/assets/new-logo-jayamini.png";
-import jpEmblem from "@/assets/jp-emblem.png";
+import logo from "@/assets/januk-logo-horizontal.png";
+import jpEmblem from "@/assets/januk-emblem.png";
 
 const extendedNavLinks: Array<{ label: string; to: string; hash?: string }> = [
   { label: "Home", to: "/" },
@@ -39,11 +39,13 @@ export function Header() {
             to="/"
             className="group flex shrink-0 items-center gap-3 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
           >
-            <img
-              src={logo}
-              alt="Jayamina Print"
-              className={`h-12 sm:h-16 md:h-20 w-auto object-contain transition-all duration-300 ${(scrolled || !isHomePage) ? 'bg-black/80 p-2 rounded-xl drop-shadow-md' : 'rounded-lg filter drop-shadow-sm'}`}
-            />
+            <div className="flex items-center bg-white/95 px-3 py-1.5 rounded-xl shadow-sm border border-black/5">
+              <img
+                src={logo}
+                alt="Januk Print"
+                className="h-8 sm:h-10 md:h-11 w-auto object-contain transition-all duration-300 drop-shadow-none"
+              />
+            </div>
           </Link>
 
           <div className="flex items-center gap-2">
@@ -86,7 +88,7 @@ export function Header() {
               <SheetContent side="right" className="w-[86vw] max-w-xs border-border bg-surface p-0">
                 <div className="flex items-center justify-between border-b border-border px-6 py-4">
                   <SheetTitle className="font-poppins text-base font-semibold text-primary">
-                    JAYAMINA PRINT
+                    JANUK PRINT
                   </SheetTitle>
                 </div>
                 <nav aria-label="Mobile" className="flex flex-col gap-1 p-4">

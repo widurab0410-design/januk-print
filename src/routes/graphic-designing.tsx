@@ -6,9 +6,9 @@ import { Reveal } from "@/components/jp/Reveal";
 import { ServiceCard, SectionHeading } from "@/components/jp/ui-blocks";
 import { designServices } from "@/components/jp/data";
 
-const title = "Graphic Designing Services | Jayamina Print";
+const title = "Graphic Designing Services | Januk Print";
 const description =
-  "Professional graphic design services — logo design, brand identity, packaging, brochures, social media graphics and more. Crafted by Jayamina Print's in-house creative team.";
+  "Professional graphic design services — logo design, brand identity, packaging, brochures, social media graphics and more. Crafted by Januk Print's in-house creative team.";
 
 export const Route = createFileRoute("/graphic-designing")({
   head: () => ({

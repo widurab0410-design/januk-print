@@ -24,7 +24,7 @@ import {
   whyChooseUs,
 } from "@/components/jp/data";
 
-const title = "Jayamina Print — Quality Offset and Digital Printing Since 2013";
+const title = "Januk Print — Quality Offset and Digital Printing Since 2013";
 const description =
   "Pioneer offset and digital printer of books, magazines, cartons and boxes, flyers, leaflets, posters, bill books and luxury corporate stationery. Get an instant quote!";
 
@@ -135,7 +135,7 @@ function Home() {
             <Reveal>
               <SectionHeading
                 eyebrow="Why us"
-                title="Why Choose Jayamina Print?"
+                title="Why Choose Januk Print?"
                 sub="Ten years of consistent work, honest pricing and a team that genuinely cares how your brand looks."
               />
             </Reveal>

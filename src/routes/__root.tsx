@@ -79,13 +79,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Jayamina Print — Graphic Design & Printing Since 2013" },
+      { title: "Januk Print — Graphic Design & Printing Since 2013" },
       {
         name: "description",
         content:
           "Professional graphic design and printing since 2013 — branding, packaging, signage and apparel, delivered worldwide.",
       },
-      { property: "og:title", content: "Jayamina Print — Graphic Design & Printing Since 2013" },
+      { property: "og:title", content: "Januk Print — Graphic Design & Printing Since 2013" },
       {
         property: "og:description",
         content:

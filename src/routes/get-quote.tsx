@@ -5,7 +5,7 @@ import { PrintCalculator } from "@/components/jp/PrintCalculator";
 export const Route = createFileRoute("/get-quote")({
   head: () => ({
     meta: [
-      { title: "Get a Quote — Jayamina Print" },
+      { title: "Get a Quote — Januk Print" },
       { name: "description", content: "Calculate your print order estimate instantly." },
     ],
   }),

@@ -33,7 +33,7 @@ export function CTASection({
           >
             <a
               href={`https://wa.me/${COMPANY.whatsapp}?text=${encodeURIComponent(
-                "Hi Jayamina Print! I'd like a quote.",
+                "Hi Januk Print! I'd like a quote.",
               )}`}
               target="_blank"
               rel="noopener noreferrer"

@@ -21,7 +21,7 @@ import { Reveal } from "@/components/jp/Reveal";
 import { SectionHeading } from "@/components/jp/ui-blocks";
 import { CTASection } from "@/components/jp/CTASection";
 
-const title = "Industries We Serve — Jayamina Print";
+const title = "Industries We Serve — Januk Print";
 const description =
   "From retail and e-commerce to restaurants, education, and real estate. Discover custom design and printing solutions tailored to your industry.";
 
@@ -154,7 +154,7 @@ function IndustriesPage() {
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-12 lg:grid-cols-12 items-center">
             <div className="lg:col-span-6 space-y-4">
-              <span className="font-mono text-xs font-semibold uppercase tracking-wider text-accent">Why Work With Jayamina</span>
+              <span className="font-mono text-xs font-semibold uppercase tracking-wider text-accent">Why Work With Januk Print</span>
               <h2 className="font-display text-3xl font-bold leading-tight sm:text-4xl">
                 Bespoke printing and design, tailored for your brand
               </h2>

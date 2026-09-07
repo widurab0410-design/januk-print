@@ -10,7 +10,7 @@ export function PrintSpecVisualizer() {
       <div className="relative overflow-hidden rounded-2xl border border-border/80 group">
         <img
           src="/commercial_print_showcase.png"
-          alt="Commercial Printing Products Showcase — Jayamina Print"
+          alt="Commercial Printing Products Showcase — Januk Print"
           className="w-full h-auto object-cover rounded-2xl transition-transform duration-500 group-hover:scale-105"
         />
         <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between rounded-xl border border-white/20 bg-black/60 px-3.5 py-2 backdrop-blur-md text-white text-xs">

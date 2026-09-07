@@ -110,12 +110,14 @@ export function HomeLoadingScreen() {
                     }}
                   />
                 )}
-                {/* 3D CMYK Logo Image rendered directly on dark loading background */}
-                <img
-                  src={logoNew}
-                  alt="Jayamina Print"
-                  className="relative h-48 sm:h-56 md:h-64 w-auto object-contain rounded-2xl filter drop-shadow-[0_4px_16px_rgba(0,0,0,0.35)]"
-                />
+                {/* Brand Logo Image rendered cleanly on loading background */}
+                <div className="relative p-3.5 bg-white/95 rounded-3xl shadow-[0_8px_32px_rgba(0,0,0,0.4)] border border-white/20">
+                  <img
+                    src={logoNew}
+                    alt="Januk Print"
+                    className="h-36 sm:h-44 md:h-52 w-auto object-contain rounded-2xl filter drop-shadow-sm"
+                  />
+                </div>
               </div>
             </motion.div>
 

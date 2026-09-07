@@ -16,7 +16,7 @@ export function DirectorQuote() {
               Professional and personalized services.
             </h2>
             <p className="text-base leading-relaxed text-muted-foreground">
-              At Jayamina Print, everything is done to make your life easier: our team has the expertise to carry out your projects and meet your needs. We take care of your project from production to delivery on time, respecting your requirements and according to your budget.
+              At Januk Print, everything is done to make your life easier: our team has the expertise to carry out your projects and meet your needs. We take care of your project from production to delivery on time, respecting your requirements and according to your budget.
             </p>
             <h4 className="font-display text-lg font-semibold text-foreground">
               Whatever your project, we can help you!
@@ -46,10 +46,10 @@ export function DirectorQuote() {
 
               <div className="pt-4 border-t border-white/20">
                 <p className="font-display font-bold text-base uppercase tracking-wider text-white">
-                  Jayamina Print Team
+                  Januk Print Team
                 </p>
                 <p className="text-xs text-white/80 font-mono mt-0.5">
-                  Managing Director, Jayamina Print House Ltd
+                  Managing Director, Januk Print House Ltd
                 </p>
               </div>
             </div>

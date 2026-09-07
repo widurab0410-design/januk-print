@@ -29,13 +29,13 @@ export function StoryCard() {
 
         <div className="space-y-4 font-sans text-base leading-relaxed text-muted-foreground sm:text-lg">
           <p className="text-foreground font-medium">
-            Jayamina Print was established in <span className="text-accent font-semibold">2013</span> with a simple belief: every business — no matter its size — deserves design and print work it can be genuinely proud of.
+            Januk Print was established in <span className="text-accent font-semibold">2013</span> with a simple belief: every business — no matter its size — deserves design and print work it can be genuinely proud of.
           </p>
           <p>
             What began as a small design desk grew, project by project, into a full creative studio and printing partner. Over more than a decade we've produced logos, brand identities, packaging, signage, apparel and everything in between for hundreds of clients across retail, hospitality, education, real estate and beyond.
           </p>
           <p>
-            Along the way we invested in better equipment, better materials and — most importantly — better people. Today Jayamina Print serves clients locally and online worldwide, combining boutique studio attention with dependable production capacity.
+            Along the way we invested in better equipment, better materials and — most importantly — better people. Today Januk Print serves clients locally and online worldwide, combining boutique studio attention with dependable production capacity.
           </p>
           <div className="pt-2 flex items-center gap-2 font-display font-semibold text-accent text-lg">
             <Sparkles className="h-5 w-5 shrink-0" />

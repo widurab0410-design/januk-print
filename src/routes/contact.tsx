@@ -17,9 +17,9 @@ import { PageHeader, PageShell } from "@/components/jp/PageShell";
 import { Reveal } from "@/components/jp/Reveal";
 import { COMPANY } from "@/components/jp/data";
 
-const title = "Contact Jayamina Print — Get a Free Quote";
+const title = "Contact Januk Print — Get a Free Quote";
 const description =
-  "Contact Jayamina Print for design and printing quotes. Email, phone or WhatsApp us, or send your requirements using the form and we'll reply within hours.";
+  "Contact Januk Print for design and printing quotes. Email, phone or WhatsApp us, or send your requirements using the form and we'll reply within hours.";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -147,7 +147,7 @@ function Contact() {
             </div>
             <div className="overflow-hidden rounded-3xl border border-border">
               <iframe
-                title="Jayamina Print location map"
+                title="Januk Print location map"
                 src="https://www.openstreetmap.org/export/embed.html?bbox=79.82%2C6.86%2C79.90%2C6.94&layer=mapnik"
                 loading="lazy"
                 className="h-64 w-full border-0 grayscale"

@@ -28,7 +28,7 @@ export function GoldEmblem({
   );
 }
 
-export function JayaminaLogo({
+export function JanukLogo({
   variant = "gold-on-white",
   showSub = true,
 }: {
@@ -48,7 +48,7 @@ export function JayaminaLogo({
         <span
           className="font-display font-light uppercase tracking-[0.28em] text-base leading-none text-[#BB8F3E]"
         >
-          JAYAMINA PRINT
+          JANUK PRINT
         </span>
         {showSub ? (
           <span
@@ -63,3 +63,5 @@ export function JayaminaLogo({
     </div>
   );
 }
+
+

@@ -1,8 +1,8 @@
 export const COMPANY = {
-  name: "Jayamina Print",
+  name: "Januk Print",
   tagline: "Creative Design. Quality Printing. Trusted Since 2013.",
   since: 2013,
-  email: "isuru@jayaminaprint.com",
+  email: "contact@janukprint.com",
   phone: "+94 77 456 7890",
   whatsapp: "94774567890",
   location: "Colombo, Sri Lanka — serving clients worldwide",

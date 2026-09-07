@@ -7,9 +7,9 @@ import { Reveal } from "@/components/jp/Reveal";
 import { CheckItem, FeatureCard, SectionHeading } from "@/components/jp/ui-blocks";
 import { coreValues, trustPoints } from "@/components/jp/data";
 
-const title = "About Jayamina Print — Trusted Design & Print Since 2013";
+const title = "About Januk Print — Trusted Design & Print Since 2013";
 const description =
-  "Creative design. Quality printing. Trusted since 2013. Learn about Jayamina Print's story, mission, vision and the values behind every project we deliver.";
+  "Creative design. Quality printing. Trusted since 2013. Learn about Januk Print's story, mission, vision and the values behind every project we deliver.";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -34,7 +34,7 @@ function About() {
         eyebrow="About"
         title={
           <>
-            About <span className="text-gradient-brand">Jayamina Print</span>
+            About <span className="text-gradient-brand">Januk Print</span>
           </>
         }
         sub="Creative Design. Quality Printing. Trusted Since 2013."

@@ -149,7 +149,7 @@ export function PrinterIntro({ onClose, autoPlay = true, isModal = false }: Prin
           </span>
           <div>
             <h3 className="font-display font-bold text-lg text-white flex items-center gap-2">
-              JAYAMINA LIVE OFFSET PRINTER
+              JANUK LIVE OFFSET PRINTER
               <span className="inline-flex items-center gap-1 rounded-full bg-[#BB8F3E]/15 px-2.5 py-0.5 text-[0.7rem] font-mono font-medium text-[#E2C175] border border-[#BB8F3E]/30">
                 <Sparkles className="h-3 w-3" /> Live Simulator
               </span>
@@ -298,7 +298,7 @@ export function PrinterIntro({ onClose, autoPlay = true, isModal = false }: Prin
                 <span>JOB ID: #JP-2026-HQ</span>
               </div>
 
-              {/* Main Printed Jayamina Logo & Crest */}
+              {/* Main Printed Januk Logo & Crest */}
               <div className="flex flex-col items-center text-center space-y-4">
                 {/* Gold Crest */}
                 <div className="relative">
@@ -315,7 +315,7 @@ export function PrinterIntro({ onClose, autoPlay = true, isModal = false }: Prin
                 {/* Big Printed Brand Title */}
                 <div>
                   <h1 className="font-display text-3xl sm:text-5xl font-extrabold tracking-wider uppercase text-transparent bg-clip-text bg-gradient-to-r from-[#8A6421] via-[#BB8F3E] to-[#E2C175] drop-shadow-sm">
-                    JAYAMINA PRINT
+                    JANUK PRINT
                   </h1>
                   <p className="font-mono text-xs sm:text-sm font-semibold uppercase tracking-[0.25em] text-neutral-700 mt-1">
                     Quality Offset &amp; Digital Printing Since 2013
@@ -364,7 +364,7 @@ export function PrinterIntro({ onClose, autoPlay = true, isModal = false }: Prin
                 size="lg"
                 className="bg-gradient-to-r from-[#E2C175] via-[#BB8F3E] to-[#8A6421] text-white font-bold px-8 shadow-xl hover:brightness-110 rounded-2xl"
               >
-                Explore Jayamina Print Website
+                Explore Januk Print Website
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             ) : (

@@ -33,7 +33,7 @@ export function Footer() {
   const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault();
     if (!email) return;
-    toast.success("Thank you for subscribing to Jayamina Print newsletter!");
+    toast.success("Thank you for subscribing to Januk Print newsletter!");
     setEmail("");
   };
 
@@ -70,11 +70,13 @@ export function Footer() {
           {/* Brand Info */}
           <div>
             <Link to="/" className="inline-block transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]">
-              <img
-                src={logoNew}
-                alt="Jayamina Print"
-                className="h-16 sm:h-20 w-auto object-contain rounded-xl filter drop-shadow-sm"
-              />
+              <div className="inline-flex items-center bg-white/95 p-2 rounded-xl shadow-sm border border-white/10">
+                <img
+                  src={logoNew}
+                  alt="Januk Print"
+                  className="h-14 sm:h-16 w-auto object-contain rounded-lg"
+                />
+              </div>
             </Link>
             <p className="mt-4 max-w-xs text-xs leading-relaxed text-neutral-400">
               Pioneer offset and digital printer of books, magazines, cartons, flyers, leaflets, posters &amp; commercial packaging.
@@ -165,7 +167,7 @@ export function Footer() {
         {/* Bottom Copyright & Legal Links */}
         <div className="mt-12 border-t border-neutral-800 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-neutral-500">
           <p>
-            © {new Date().getFullYear()} Jayamina Print. All rights reserved. | Managed and Created by{" "}
+            © {new Date().getFullYear()} Januk Print. All rights reserved. | Managed and Created by{" "}
             <a
               href="https://www.univerzlk.com"
               target="_blank"
