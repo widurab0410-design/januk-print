@@ -7,7 +7,7 @@ import {
   useReducedMotion,
 } from "framer-motion";
 import { ProgressiveFluxLoader } from "@/components/ui/progressive-flux-loader";
-import logoNew from "@/assets/new-logo.jpg";
+import logoWhite from "@/assets/januk-logo-white.png";
 
 /* ── constants ───────────────────────────────────────────────── */
 
@@ -111,11 +111,11 @@ export function HomeLoadingScreen() {
                   />
                 )}
                 {/* Brand Logo Image rendered cleanly on loading background */}
-                <div className="relative p-3.5 bg-white/95 rounded-3xl shadow-[0_8px_32px_rgba(0,0,0,0.4)] border border-white/20">
+                <div className="relative p-2">
                   <img
-                    src={logoNew}
+                    src={logoWhite}
                     alt="Januk Print"
-                    className="h-36 sm:h-44 md:h-52 w-auto object-contain rounded-2xl filter drop-shadow-sm"
+                    className="h-32 sm:h-40 md:h-44 w-auto object-contain filter drop-shadow-[0_4px_24px_rgba(251,146,60,0.35)]"
                   />
                 </div>
               </div>

@@ -6,7 +6,8 @@ import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/s
 import { COMPANY, navLinks } from "./data";
 import { useScrolled } from "./useScrolled";
 import { ThemeToggle } from "./ThemeToggle";
-import logo from "@/assets/januk-logo-horizontal.png";
+import logoDark from "@/assets/januk-logo-horizontal.png";
+import logoWhite from "@/assets/januk-logo-horizontal-white.png";
 import jpEmblem from "@/assets/januk-emblem.png";
 
 const extendedNavLinks: Array<{ label: string; to: string; hash?: string }> = [
@@ -34,18 +35,33 @@ export function Header() {
         }`}
       >
         <div className="flex w-full max-w-7xl mx-auto items-center justify-between gap-4 px-4 py-2 sm:px-6 lg:px-8">
-          {/* Highlighted Official Brand Badge aligned to left corner */}
+          {/* Logo brand link seamlessly blended with header */}
           <Link
             to="/"
             className="group flex shrink-0 items-center gap-3 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
           >
-            <div className="flex items-center bg-white/95 px-3 py-1.5 rounded-xl shadow-sm border border-black/5">
+            {!scrolled && isHomePage ? (
+              // Over transparent hero banner (dark background): clean white transparent logo
               <img
-                src={logo}
+                src={logoWhite}
                 alt="Januk Print"
-                className="h-8 sm:h-10 md:h-11 w-auto object-contain transition-all duration-300 drop-shadow-none"
+                className="h-8 sm:h-10 md:h-11 w-auto object-contain transition-all duration-300 drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]"
               />
-            </div>
+            ) : (
+              // Scrolled or inner pages: responsive to light / dark mode
+              <>
+                <img
+                  src={logoDark}
+                  alt="Januk Print"
+                  className="h-8 sm:h-10 md:h-11 w-auto object-contain transition-all duration-300 dark:hidden drop-shadow-sm"
+                />
+                <img
+                  src={logoWhite}
+                  alt="Januk Print"
+                  className="h-8 sm:h-10 md:h-11 w-auto object-contain transition-all duration-300 hidden dark:block drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]"
+                />
+              </>
+            )}
           </Link>
 
           <div className="flex items-center gap-2">

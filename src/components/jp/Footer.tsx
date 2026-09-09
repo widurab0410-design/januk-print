@@ -5,7 +5,7 @@ import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { COMPANY, navLinks } from "./data";
-import logoNew from "@/assets/new-logo.jpg";
+import logoWhite from "@/assets/januk-logo-horizontal-white.png";
 
 const socials = [
   { icon: Facebook, label: "Facebook", href: "https://facebook.com" },
@@ -70,13 +70,11 @@ export function Footer() {
           {/* Brand Info */}
           <div>
             <Link to="/" className="inline-block transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]">
-              <div className="inline-flex items-center bg-white/95 p-2 rounded-xl shadow-sm border border-white/10">
-                <img
-                  src={logoNew}
-                  alt="Januk Print"
-                  className="h-14 sm:h-16 w-auto object-contain rounded-lg"
-                />
-              </div>
+              <img
+                src={logoWhite}
+                alt="Januk Print"
+                className="h-9 sm:h-11 w-auto object-contain transition-all duration-300 drop-shadow-[0_2px_12px_rgba(0,0,0,0.5)]"
+              />
             </Link>
             <p className="mt-4 max-w-xs text-xs leading-relaxed text-neutral-400">
               Pioneer offset and digital printer of books, magazines, cartons, flyers, leaflets, posters &amp; commercial packaging.
