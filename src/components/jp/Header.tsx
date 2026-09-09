@@ -18,49 +18,21 @@ const extendedNavLinks: Array<{ label: string; to: string; hash?: string }> = [
   { label: "Contact", to: "/contact" },
 ];
 
-function useIsDark() {
-  const [isDark, setIsDark] = useState(() => {
-    if (typeof document !== "undefined") {
-      return document.documentElement.classList.contains("dark");
-    }
-    return false;
-  });
-
-  useEffect(() => {
-    const update = () => {
-      setIsDark(document.documentElement.classList.contains("dark"));
-    };
-    update();
-
-    const observer = new MutationObserver(update);
-    observer.observe(document.documentElement, {
-      attributes: true,
-      attributeFilter: ["class"],
-    });
-    return () => observer.disconnect();
-  }, []);
-
-  return isDark;
-}
-
 export function Header() {
   const [open, setOpen] = useState(false);
   const scrolled = useScrolled(12);
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const isHomePage = pathname === '/';
-  const isDark = useIsDark();
-
-  // On home page over dark hero banner in dark mode, keep navbar transparent.
-  // In light mode or when scrolled or on inner pages, use a high-contrast frosted glass navbar.
-  const isTransparent = isHomePage && !scrolled && isDark;
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 transition-all duration-300">
       {/* Main Navbar */}
       <div
         className={`transition-all duration-300 ${
-          isTransparent
-            ? "border-b border-transparent bg-transparent"
+          scrolled
+            ? "border-b border-border bg-background/95 backdrop-blur-xl shadow-sm"
+            : isHomePage
+            ? "border-b border-border/30 bg-background/80 backdrop-blur-md shadow-sm dark:bg-transparent dark:border-transparent dark:shadow-none"
             : "border-b border-border bg-background/95 backdrop-blur-xl shadow-sm"
         }`}
       >
@@ -70,21 +42,18 @@ export function Header() {
             to="/"
             className="group flex shrink-0 items-center gap-3 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
           >
-            {isTransparent || isDark ? (
-              // Dark background / dark mode: crisp white logo with subtle depth
-              <img
-                src={logoWhite}
-                alt="Januk Print"
-                className="h-8 sm:h-10 md:h-11 w-auto object-contain transition-all duration-300 drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]"
-              />
-            ) : (
-              // Light mode: high-contrast deep navy logo with zero box
-              <img
-                src={logoDark}
-                alt="Januk Print"
-                className="h-8 sm:h-10 md:h-11 w-auto object-contain transition-all duration-300 drop-shadow-sm"
-              />
-            )}
+            {/* Deep navy logo for light mode */}
+            <img
+              src={logoDark}
+              alt="Januk Print"
+              className="h-8 sm:h-10 md:h-11 w-auto object-contain transition-all duration-300 logo-light drop-shadow-sm"
+            />
+            {/* Crisp white logo for dark mode */}
+            <img
+              src={logoWhite}
+              alt="Januk Print"
+              className="h-8 sm:h-10 md:h-11 w-auto object-contain transition-all duration-300 logo-dark drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]"
+            />
           </Link>
 
           <div className="flex items-center gap-2">
@@ -99,7 +68,7 @@ export function Header() {
                     className={`relative whitespace-nowrap px-2.5 py-1.5 font-sans text-sm lg:text-[0.95rem] xl:text-base font-bold uppercase tracking-wide transition-colors duration-200 ${
                       isActive
                         ? "text-primary after:absolute after:bottom-0 after:left-1.5 after:right-1.5 after:h-[3px] after:bg-primary after:rounded-full drop-shadow-[0_2px_8px_rgba(234,88,12,0.35)]"
-                        : `${isTransparent ? 'text-white drop-shadow-md' : 'text-foreground'} hover:text-primary hover:scale-[1.02] transition-all duration-200`
+                        : "text-foreground hover:text-primary transition-all duration-200"
                     }`}
                   >
                     {link.label}

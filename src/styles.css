@@ -311,3 +311,19 @@ html, body {
     display: none;
   }
 }
+
+/* ── Theme-Adaptive Logo Display (100% CSS, Zero Hydration Mismatch) ── */
+.logo-light {
+  display: block;
+}
+.logo-dark {
+  display: none;
+}
+
+html.dark .logo-light {
+  display: none !important;
+}
+html.dark .logo-dark {
+  display: block !important;
+}
+
